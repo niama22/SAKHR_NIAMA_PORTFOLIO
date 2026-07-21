@@ -9,13 +9,13 @@ export const profile = {
   tagline: "Full-Stack Developer",
   intro:
     "Ingénieure logiciel spécialisée en développement full-stack, cloud computing, DevOps et intelligence artificielle. Passionnée par la conception de solutions logicielles fiables, sécurisées, évolutives et performantes, avec un fort intérêt pour l'innovation et l'apprentissage continu des nouvelles technologies.",
+  email: "niamasakhr@gmail.com",
   phone: "+212 6 16 56 95 99",
   github: "https://github.com/niama22",
   linkedin: "https://linkedin.com/in/niama-sakhr-4672572a2",
   website: "https://niama-sakhr-portfolio.vercel.app",
   location: "Tanger, Maroc",
 };
-
 export const stats = [
   { label: "Projets techniques", value: 2 },
   { label: "Stages", value: 2 },
