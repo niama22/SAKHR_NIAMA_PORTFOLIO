@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-inter: "Inter", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-surface-light text-slate-800 dark:bg-surface-dark dark:text-slate-100 font-body antialiased transition-colors duration-300;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: theme("colors.primary.DEFAULT");
+  border-radius: 999px;
+  opacity: 0.4;
+}
+
+/* Selection */
+::selection {
+  background: theme("colors.accent.DEFAULT");
+  color: white;
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.dark .glass {
+  background: rgba(17, 24, 39, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Section container */
+.section-container {
+  @apply max-w-6xl mx-auto px-6 md:px-10;
+}
+
+.section-eyebrow {
+  @apply text-xs uppercase tracking-[0.2em] font-semibold text-primary dark:text-primary-light;
+}
+
+.card-surface {
+  @apply bg-white dark:bg-surface-darksoft rounded-xl2 shadow-soft border border-slate-100 dark:border-white/5;
+}
+
+/* Custom cursor (desktop only, see CustomCursor.tsx) */
+.cursor-dot {
+  @apply pointer-events-none fixed z-[100] rounded-full mix-blend-difference bg-white;
+  width: 10px;
+  height: 10px;
+  transform: translate(-50%, -50%);
+}
+
+/* Focus visibility for accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid theme("colors.accent.DEFAULT");
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
