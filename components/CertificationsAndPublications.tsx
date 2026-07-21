@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { useLanguage } from "@/lib/LanguageContext";
 import ScrollReveal from "./ScrollReveal";
 import { Award, BookOpen, ExternalLink } from "lucide-react";
