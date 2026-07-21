@@ -1,6 +1,6 @@
 "use client";
 
-import { useLanguage } from "@/lib/Languagecontext";
+import { useLanguage } from "@/lib/LanguageContext";
 import ScrollReveal from "./ScrollReveal";
 import StatCounter from "./StatCounter";
 import { CheckCircle2 } from "lucide-react";

@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Github, ExternalLink, FileText } from "lucide-react";
-import { useLanguage } from "@/lib/Languagecontext";
+import { useLanguage } from "@/lib/LanguageContext";
 import ScrollReveal from "./ScrollReveal";
 
 export default function Projects() {

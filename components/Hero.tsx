@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { Download, Mail, FolderGit2 } from "lucide-react";
 import { profile } from "@/lib/content";
-import { useLanguage } from "@/lib/Languagecontext";
+import { useLanguage } from "@/lib/LanguageContext";
 import TypingText from "./TypingText";
 
 export default function Hero() {

@@ -1,6 +1,6 @@
 "use client";
 
-import { useLanguage } from "@/lib/Languagecontext";
+import { useLanguage } from "@/lib/LanguageContext";
 import ScrollReveal from "./ScrollReveal";
 import { Award, BookOpen, ExternalLink } from "lucide-react";
 
