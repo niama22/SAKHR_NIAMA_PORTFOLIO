@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "@/styles/globals.css";
 import ThemeProvider from "@/components/ThemeProvider";
-import LanguageProvider from "@/lib/LanguageContext";
+import LanguageProvider from "@/lib/Languagecontext";
 import { profile } from "@/lib/content";
 import { content } from "@/lib/content";
 
